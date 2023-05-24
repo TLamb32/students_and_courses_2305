@@ -18,8 +18,4 @@ class Course
     def enroll(student)
         @students << student
     end
-
-    def full?
-        @full == true
-    end
 end
