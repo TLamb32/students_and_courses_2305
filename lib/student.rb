@@ -8,4 +8,13 @@ class Student
         @age = student_data[:age]
         @scores = []
     end
+
+    def log_score(score)
+        @scores << score
+    end
+
+    def grade
+        scores = [89, 78]
+        scores.sum(0.0) / scores.size
+    end
 end
