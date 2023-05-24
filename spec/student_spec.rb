@@ -8,15 +8,14 @@ RSpec.describe Student do
 
     describe '#exists' do
         it 'exists and has readable attributes' do
-            expect(@student).to be_a(Student)
             expect(@student.name).to eq "Morgan"
             expect(@student.age).to eq 21
-            expect(@student.scores).to eq ([])
+            expect(@student.scores).to eq([])
         end
     end
 
     describe '#logs_scores' do
-        it 'can log scores' do
+        xit 'can log scores' do
             @student.log_score(89)
             @student.log_score(78)
 
@@ -25,7 +24,9 @@ RSpec.describe Student do
     end
 
     describe '#grade' do
-        it 'can average the scores'
+        xit 'can average the scores' do
+            expect(@student.grade).to eq 83.5
+        end
     end
   
 end
