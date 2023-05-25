@@ -14,7 +14,6 @@ class Student
     end
 
     def grade
-        scores = [89, 78]
-        scores.sum(0.0) / scores.size
+        (@scores.sum.to_f/ @scores.size).round(1)
     end
 end

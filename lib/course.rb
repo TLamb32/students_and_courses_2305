@@ -4,18 +4,19 @@ class Course
                 :students
                 
 
-    def initialize(name, capacity, full = false)
+    def initialize(name, capacity)
         @name = name
         @capacity = capacity
         @students = []
-        @full = full
     end
 
     def full?
-        @full
+        @students.count == @capacity
     end
 
     def enroll(student)
-        @students << student
+        @students << student unless full?
+
+    
     end
 end
